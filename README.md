@@ -1,11 +1,16 @@
-# hackaviz-2025
-Le dépot des données du hackaviz 2025
+# hackaviz-2025 : Que d’eau, que d’eau !
+<aside>
+💡
+POUR LE NEOPHYTE : il y a beaucoup de jeux de données proposées, mais rien n'oblige à tout utiliser. Vous pouvez en choisir un seul ou même un sous-ensemble des données qu'il contient pour raconter une belle histoire.
 
-# Que d’eau, que d’eau !
+Durant la durée de l'épreuve vous pouvez rejoindre le salon Discord #hackaviz2025 pour poser des questions et échanger: https://discord.gg/wd4SKKDARC
+
+</aside>
+
 
 Toulouse Dataviz a rassemblé cette année un ensemble de jeux de données qui rend hommage aux 150 ans de la crue du 23 juin 1875 qui a dévasté de nombreuses communes dans les trois départements : Haute-Garonne, Tarn-et-Garonne et Lot-et-Garonne. 200 morts et 25 000 sans logement.
 
-A Toulouse, ont été lourdement affectées surtout la rive gauche de la Garonne (Saint-Cyprien et Croix de Pierre) mais aussi la rive droite (Saint-Michel et Amidonniers). Cet événement est à l’origine des constructions de prévention déployés depuis : digues, portes sur les berges, nouvelles règles de construction, … Et bien sûr, la mise en place de politiques publiques de surveillance, d’alerte et de mise en sécurité si nécessaire.
+A Toulouse, ont été lourdement affectés, surtout la rive gauche de la Garonne (Saint-Cyprien et Croix de Pierre) mais aussi la rive droite (Saint-Michel et Amidonniers). Cet événement est à l’origine des constructions de prévention déployés depuis : digues, portes sur les berges, nouvelles règles de construction, … Et bien sûr, la mise en place de politiques publiques de surveillance, d’alerte et de mise en sécurité si nécessaire.
 
 https://fr.wikipedia.org/wiki/Crue_de_la_Garonne_en_1875
 
@@ -17,17 +22,10 @@ Le sujet est complexe et l’événement est ancien, mais heureusement les gén�
 
 # Les données
 
-<aside>
-💡
+Les données sont disponibles sous différents formats :
 
-ATTENTION : il y a de nombreux jeux de données qui permettent de raconter de nombreuses histoires (vieilles ou récentes). Vous pouvez les combiner si nécessaire, mais éviter le piège de vouloir TOUT utiliser.
-
-</aside>
-
-Les données sont disponibles aux formats :
-
-- xlsx
-- json
+- xlsx ou csv
+- json ou geojson
 - parquet
 
 Elles peuvent être directement lues sur le repository github en préfixant le nom du fichier par :
@@ -46,7 +44,7 @@ On dispose de l’historique de 132 stations, leurs attributs sont :
 
 **stations**
 
-| Attribut | Description | Type |
+| Attribut | Description | Exemple |
 | --- | --- | --- |
 | code_site | Le code du site de la station | chaîne |
 | libelle_site | Le libellé du site de la station | chaîne |
@@ -72,7 +70,7 @@ Le fichier contient un historique temporel autour des 7 crues historiques depuis
 (Attention le nombre de stations actives varie d’une crue à l’autre)
 
 
-| Attribut | Description | Type |
+| Attribut | Description | Exemple |
 | --- | --- | --- |
 | code_site | Code site | chaîne |
 | code_station | Code de la station | chaîne |
@@ -90,7 +88,7 @@ Le fichier contient un historique temporel autour des 7 crues historiques depuis
 Le fichier contient un historique autour des 5 crues historiques depuis 1905.
 (Attention le nombre de stations actives varie d’une crue à l’autre)
 
-| Attribut | Description | Type |
+| Attribut | Description | Exemple |
 | --- | --- | --- |
 | code_site | Code site | chaîne |
 | code_station | Code de la station | chaîne |
@@ -109,7 +107,7 @@ Toutes les heures, 30 minutes, 15 minutes et 5 minutes au fur et à mesure de l�
 
 **serie_longue_toulouse** 
 
-| Attribut | Description | Type |
+| Attribut | Description | Exemple |
 | --- | --- | --- |
 | date | Date d’observation | année-mois-jour-heure-minutes |
 | hauteur | Hauteur d'eau en m | réel |
@@ -124,7 +122,7 @@ Sur certaines stations se trouve un poste météo qui renseigne depuis 1809 nota
 **pluviometrie_7_crues**
 
 
-| Attribut | Description | Type |
+| Attribut | Description | Exemple |
 | --- | --- | --- |
 | code_site | Code site | chaîne |
 | code_station | Code de la station | chaîne |
@@ -138,7 +136,7 @@ Sur certaines stations se trouve un poste météo qui renseigne depuis 1809 nota
 
 ## 4- Elévations - Modèle du terrain
 
-Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude sur 36 000 points correspondant à une grille partielle de points espacés de 20m.
+Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude sur 36 000?? points correspondant à une grille partielle de points espacés de 20m.
 
 En 2 formats seulement : geoparquet et tif (raster)
 
