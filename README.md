@@ -160,9 +160,9 @@ Liste de principales références ayant permis de constituer les jeux de donnée
 
 | Référence | Source  |
 | --- | --- |
-| [https://hubeau.eaufrance.fr/](hubeau.eaufrance.fr/) | Diffusion des données sur l'eau |
-| [https://ign.fr](ign.fr) | L'institut Géographique National |
-| [https://data.gouv.fr](data.gouv.fr)  | La plateforme des données publiques françaises |
-| [https://vigicrues.gouv.fr](vigicrues.gouv.fr) | Le service d'information sur le risque de crues |
+| [hubeau.eaufrance.fr/](https://hubeau.eaufrance.fr/) | Diffusion des données sur l'eau |
+| [ign.fr](https://ign.fr) | L'institut Géographique National |
+| [data.gouv.fr](https://data.gouv.fr)  | La plateforme des données publiques françaises |
+| [vigicrues.gouv.fr](https://vigicrues.gouv.fr) | Le service d'information sur le risque de crues |
 
 
