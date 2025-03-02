@@ -34,7 +34,7 @@ Les données sont disponibles sous différents formats :
 
 - xlsx ou csv
 - json ou geojson
-- parquet
+- parquet ou geoparquet
 
 Elles peuvent être directement lues sur le repository github en préfixant le nom du fichier par :
 
