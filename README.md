@@ -18,9 +18,9 @@ Toulouse Dataviz a rassemblé cette année un ensemble de jeux de données qui r
 
 A Toulouse, ont été lourdement affectés, surtout la rive gauche de la Garonne (Saint-Cyprien et Croix de Pierre) mais aussi la rive droite (Saint-Michel et Amidonniers). Cet événement est à l’origine des constructions de prévention déployés depuis : digues, portes sur les berges, nouvelles règles de construction, … Et bien sûr, la mise en place de politiques publiques de surveillance, d’alerte et de mise en sécurité si nécessaire.
 
-https://fr.wikipedia.org/wiki/Crue_de_la_Garonne_en_1875
+[La crue de 1875 de la Garonne](https://fr.wikipedia.org/wiki/Crue_de_la_Garonne_en_1875)
 
-https://jeparticipe.metropole.toulouse.fr/processes/les150ans-crues-garonne
+[Le site de Toulouse Metropole sur les 150 ans de la crue de 1875](https://jeparticipe.metropole.toulouse.fr/processes/les150ans-crues-garonne)
 
 Le sujet est complexe et l’événement est ancien, mais heureusement les générations précédentes ont eu la sagesse de mettre en place une organisation humaine permettant le relevé systématique  des niveaux des cours d’eau et de la pluviométrie.
 
