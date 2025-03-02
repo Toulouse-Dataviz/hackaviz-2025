@@ -5,6 +5,8 @@ AVERTISSEMENT : il y a beaucoup de jeux de données cette fois, mais rien n'obli
 
 Durant la durée de l'épreuve, un salon Discord est ouvert pour poser des questions et échanger: https://discord.gg/wd4SKKDARC
 
+Pour télécharger les données il suffit de consulter le dossier data ou de télécharger une release.
+
 </aside>
 
 
