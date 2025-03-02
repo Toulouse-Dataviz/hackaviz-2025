@@ -42,7 +42,7 @@ Les données sont disponibles sous différents formats :
 -   json ou geojson
 -   parquet ou geoparquet
 
-Elles peuvent être directement lues sur le repository github en préfixant le nom du fichier par :
+Elles peuvent être directement lues sur le repository GitHub en préfixant le nom du fichier par :
 
 ```         
 https://raw.githubusercontent.com/Toulouse-Dataviz/hackaviz2025/refs/heads/main/data/<nom de fichier.suffixe>
@@ -50,11 +50,10 @@ https://raw.githubusercontent.com/Toulouse-Dataviz/hackaviz2025/refs/heads/main/
 
 ## 1- Les stations
 
-C’est sur ces points géographiques que sont mesurées l’hydrométrie. Elles couvrent ce que l’on appelle le **bassin versant** de la Garonne : les principaux cours d’eau qui contribuent au débit de la Garonne (Ariège, Tarn, Lot, …). La pluviométrie est mesurée sur des postes météo qui peuvent coïncider ou pas avec les stations.
-
+Les mesures hydrométriques sont effectuées sur ces points géographiques, couvrant ce que l'on appelle le bassin versant de la Garonne : les principaux cours d'eau qui alimentent le débit de la Garonne (Ariège, Tarn, Lot, etc.). La pluviométrie est quant à elle quantifiée par des stations météorologiques qui peuvent ou non coïncider avec les stations hydrométriques.
 ![carte bassin.jpg](carte_bassin.jpg)
 
-On dispose de l’historique de 132 stations, leurs attributs sont :
+Voici l’historique de 132 stations, leurs attributs sont :
 
 **station**
 
