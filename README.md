@@ -45,7 +45,7 @@ Les données sont disponibles sous différents formats :
 Elles peuvent être directement lues sur le repository GitHub en préfixant le nom du fichier par :
 
 ```         
-https://raw.githubusercontent.com/Toulouse-Dataviz/hackaviz2025/refs/heads/main/data/<nom de fichier.suffixe>
+https://raw.githubusercontent.com/Toulouse-Dataviz/hackaviz2025/refs/heads/main/data/<nom_de_fichier.extension>
 ```
 
 ## 1- Les stations
@@ -82,7 +82,7 @@ Voici l’historique de 132 stations, leurs attributs sont :
 
 **hauteur_eau_9_crues**
 
-Le fichier contient un historique temporel autour des crues historiques depuis 1857. (Attention le nombre de stations actives varie d’une crue à l’autre)
+Le fichier contient un historique temporel autour des neuf crues historiques depuis 1857. Le nombre de stations actives varie d’une crue à l’autre.
 
 | Attribut     | Description                 | Exemple             |
 |--------------|-----------------------------|---------------------|
@@ -97,7 +97,7 @@ Le fichier contient un historique temporel autour des crues historiques depuis 1
 
 **debit_5_crues**
 
-Le fichier contient un historique autour des 5 crues historiques depuis 1905. (Attention le nombre de stations actives varie d’une crue à l’autre)
+Le fichier contient un historique autour des cinq crues historiques depuis 1905. Attention le nombre de stations actives varie d’une crue à l’autre.
 
 | Attribut | Description | Exemple |
 |----|----|----|
@@ -106,7 +106,7 @@ Le fichier contient un historique autour des 5 crues historiques depuis 1905. (A
 | debit_moyen_journalier | Débit moyen journalier en m3/s | 22323 |
 | code_crue | Le label de la crue | 1905 |
 
-### Une série longue de 160 ans pour Toulouse (mesuré au pont Neuf)
+### Une série longue de 160 ans pour Toulouse (mesurée au Pont-Neuf)
 
 Toutes les heures, 30 minutes, 15 minutes et 5 minutes au fur et à mesure de l’avancée technologique des moyens de mesure.
 
