@@ -118,8 +118,9 @@ Toutes les heures, 30 minutes, 15 minutes et 5 minutes au fur et à mesure de l�
 | hauteur      | Hauteur d'eau en cm         | 284                      |
 | date_heure   | Horodatage de l’observation | 2022-11-14T10:15:00.000Z |
 
-Ce fichier assez volumineux n'est disponible qu'au format parquet. Un résumé quotidien plus léger est disponible :
+Ce fichier assez volumineux n'est disponible qu'au format parquet. 
 
+Toutefois, un résumé quotidien plus léger est disponible :
 **hauteur_eau_quotidienne_toulouse** la hauteur maximale de chacune des journées de la série longue.
 
 ## 3- Pluviométrie
@@ -141,7 +142,7 @@ Il existe des postes météo qui renseignent depuis 1809 notamment la pluviomét
 
 ## 4- Elévations - Modèle du terrain
 
-Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude d'une grille de points au voisinage du cours d'eau.
+Pour les plus audacieux, nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin, autrement dit l’altitude d'une grille de points au voisinage du cours d'eau.
 
 **altitude_bassin_garonne** En 2 formats seulement : geoparquet et csv
 
@@ -151,17 +152,17 @@ Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 1
 | longitude | Longitude     | 0,691927455 |
 | latitude  | Latitude      | 42,91562157 |
 
-Et une version réduite à Toulouse St Cyprien **altitude_toulouse_st_cyprien** En 3 formats : geojson, geoparquet et csv
+Et une version réduite à Toulouse St Cyprien **altitude_toulouse_st_cyprien** en 3 formats : geojson, geoparquet et csv.
 
-Ce qu'il faut retenir c'est que l'addition de la hauteur d’eau et de l'altitude du point de référence de la station fournit une grandeur **comparable** aux élévations de terrain.
+Ce qu'il faut retenir, c'est que l'addition de la hauteur d’eau et de l'altitude du point de référence de la station fournit une grandeur **comparable** aux élévations de terrain.
 
 # Références
 
-Liste de principales références ayant permis de constituer les jeux de données mis à disposition
+Liste de principales références ayant permis de constituer les jeux de données mis à disposition.
 
 | Référence | Source |
 |------------------------------------|------------------------------------|
 | [hubeau.eaufrance.fr/](https://hubeau.eaufrance.fr/) | Diffusion des données sur l'eau |
-| [ign.fr](https://ign.fr) | L'institut Géographique National |
-| [data.gouv.fr](https://data.gouv.fr) | La plateforme des données publiques françaises |
-| [vigicrues.gouv.fr](https://vigicrues.gouv.fr) | Le service d'information sur le risque de crues |
+| [ign.fr](https://ign.fr) | Institut Géographique National |
+| [data.gouv.fr](https://data.gouv.fr) | Plateforme des données publiques françaises |
+| [vigicrues.gouv.fr](https://vigicrues.gouv.fr) | Service d'information sur le risque de crues |
