@@ -149,11 +149,19 @@ Il existe des postes météo qui renseignent depuis 1809 notamment la pluviomét
 
 Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude sur XXXXX?? points correspondant à une grille partielle de points espacés de 20m.
 
-En 2 formats seulement : geoparquet et tif (raster)
-
 **altitude_bassin_garonne**
+En 2 formats seulement : geoparquet et csv
 
+| Attribut | Description | Exemple |
+| --- | --- | --- |
+| altitude | Altitude en m | 711 | 
+| longitude | Longitude | 0,691927455 |
+| latitude | Latitude | 42,91562157 | 
+
+
+Et une version réduite à Toulouse St Cyprien 
 **altitude_toulouse_st_cyprien**
+En 3 formats : geojson, geoparquet et csv
 
 Ce qu'il faut retenir c'est que l'addition de la hauteur d’eau et de l'altitude du point de référence de la station fournit une grandeur **comparable** aux élévations de terrain.
  
