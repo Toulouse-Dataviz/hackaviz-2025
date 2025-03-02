@@ -1,4 +1,4 @@
-# hackaviz-2025 : Que d’eau, que d’eau !
+# Hackaviz-2025 : Que d’eau, que d’eau !
 <aside>
 💡
 POUR LE NEOPHYTE : il y a beaucoup de jeux de données proposées, mais rien n'oblige à tout utiliser. Vous pouvez en choisir un seul ou même un sous-ensemble des données qu'il contient pour raconter une belle histoire.
@@ -7,10 +7,13 @@ Durant la durée de l'épreuve, le salon Discord #hackaviz2025 est ouvert pour p
 
 </aside>
 
----
+
 
 
 -----
+
+
+# Introduction
 Toulouse Dataviz a rassemblé cette année un ensemble de jeux de données qui rend hommage aux 150 ans de la crue du 23 juin 1875 qui a dévasté de nombreuses communes dans les trois départements : Haute-Garonne, Tarn-et-Garonne et Lot-et-Garonne. 200 morts et 25 000 sans logement.
 
 A Toulouse, ont été lourdement affectés, surtout la rive gauche de la Garonne (Saint-Cyprien et Croix de Pierre) mais aussi la rive droite (Saint-Michel et Amidonniers). Cet événement est à l’origine des constructions de prévention déployés depuis : digues, portes sur les berges, nouvelles règles de construction, … Et bien sûr, la mise en place de politiques publiques de surveillance, d’alerte et de mise en sécurité si nécessaire.
