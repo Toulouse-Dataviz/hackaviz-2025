@@ -30,7 +30,7 @@ A Toulouse, ont été lourdement affectés, surtout la rive gauche de la Garonne
 
 [Le site de Toulouse Metropole sur les 150 ans de la crue de 1875](https://jeparticipe.metropole.toulouse.fr/processes/les150ans-crues-garonne)
 
-Le sujet est complexe et l'événement remonte à loin, mais heureusement, les générations précédentes ont eu la sagesse de mettre en place une organisation permettant de relever systématiquement les niveaux des cours d'eau et la pluviométrie. Ce sont des milliers de petites mains qui ont, tous les jours, consigné ces données dans des cahiers qu'il pleuve, qu'il vente ou qu'il neige.
+Le sujet est complexe et l'événement remonte à loin, mais heureusement, les générations précédentes ont eu la sagesse de mettre en place une organisation permettant de relever systématiquement les niveaux des cours d'eau et la pluviométrie. Pendant plus d'un siècle, ce sont des milliers de petites mains qui ont, tous les jours, consigné ces données dans des cahiers qu'il pleuve, qu'il vente ou qu'il neige.
 
 ![](ToulousePN_1857_10.jpg)
 
