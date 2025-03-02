@@ -140,7 +140,7 @@ Il existe des postes météo qui renseignent depuis 1809 notamment la pluviomét
 | altitude | Altitude du pluviomètre en m | 711 | 
 | date_observation| Date d’observation  | 1952-01-15T00:00:00.000Z |
 | precipitation | Hauteur de pluie en cm | 2,20 |
-| code_crue | Code de la crue | 1952 |
+| code_crue | Le label de la crue | 1952 |
 
 
 
