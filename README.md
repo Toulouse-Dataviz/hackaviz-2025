@@ -8,13 +8,13 @@ Durant la durée de l'épreuve, un salon Discord est ouvert pour poser des quest
 
 Pour télécharger les données vous pouvez
 
--   selectionner un fichier dans le dossier `/data/` et le télécharger avec le bouton Download raw file :
+-   selectionner un fichier dans le dossier [`/data/`](https://github.com/Toulouse-Dataviz/hackaviz-2025/tree/main/data) et le télécharger avec le bouton Download raw file :
 
-    ![](docs/download_file.jpg){width="554"}
+    <img src="docs/download_file.jpg" width="554px">
 
 -   ou sélectionner une [release](https://github.com/Toulouse-Dataviz/hackaviz-2025/releases) sur le panneau de droite pour télécharger l'ensemble dans un `.zip`.
 
-Pour lire les données avec les principaux logiciels, consultez la page d'[aide au chargement](https://toulouse-dataviz.github.io/hackaviz-2025/chargement_des_donnees.html)
+Pour lire les données avec les principaux logiciels, consultez la page d'[aide au chargement](https://toulouse-dataviz.github.io/hackaviz-2025/chargement_des_donnees.html).
 
 </aside>
 
@@ -22,9 +22,9 @@ Pour lire les données avec les principaux logiciels, consultez la page d'[aide 
 
 # Que d’eau, que d’eau !
 
-Toulouse Dataviz a rassemblé cette année un ensemble de jeux de données qui rend hommage aux 150 ans de la crue du 23 juin 1875 qui a dévasté de nombreuses communes dans les trois départements : Haute-Garonne, Tarn-et-Garonne et Lot-et-Garonne. 200 morts et 25 000 sans logement.
+Toulouse Dataviz a rassemblé cette année un ensemble de jeux de données qui rend hommage aux 150 ans de la crue du 23 juin 1875 qui a dévasté de nombreuses communes dans les trois départements : Haute-Garonne, Tarn-et-Garonne et Lot-et-Garonne. 200 morts et 25 000 personnes sans logement.
 
-A Toulouse, ont été lourdement affectés, surtout la rive gauche de la Garonne (Saint-Cyprien et Croix de Pierre) mais aussi la rive droite (Saint-Michel et Amidonniers). Cet événement est à l’origine des constructions de prévention déployés depuis : digues, portes sur les berges, nouvelles règles de construction, … Et bien sûr, la mise en place de politiques publiques de surveillance, d’alerte et de mise en sécurité si nécessaire.
+A Toulouse, ont été lourdement affectés, surtout la rive gauche de la Garonne (Saint-Cyprien et Croix de Pierre) mais aussi la rive droite (Saint-Michel et les Amidonniers). Cet événement est à l’origine des constructions de prévention déployés depuis : digues, portes sur les berges, nouvelles règles de construction … Et bien sûr, la mise en place de politiques publiques de surveillance, d’alerte et de mise en sécurité si nécessaire.
 
 [La crue de 1875 de la Garonne sur Wikipedia](https://fr.wikipedia.org/wiki/Crue_de_la_Garonne_en_1875)
 
