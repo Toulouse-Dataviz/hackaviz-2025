@@ -69,20 +69,20 @@ On dispose de l’historique de 132 stations, leurs attributs sont :
 
 
 ## 2- Hydrométrie
-### Les 7 crues de 1857 à 2022 en terme de hauteur d’eau
-1857, 1875, 1905, 1952, 1977, 2000, 2022 
+### Les 9 crues de 1857 à 2022 en terme de hauteur d’eau
+1857, 1875, 1879, 1900, 1905, 1952, 1977, 2000, 2022 
 
-**hauteur_eau_7_crues**
+**hauteur_eau_9_crues**
 
-Le fichier contient un historique temporel autour des 7 crues historiques depuis 1905.
+Le fichier contient un historique temporel autour des crues historiques depuis 1857.
 (Attention le nombre de stations actives varie d’une crue à l’autre)
 
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| station | Code de la station | O200004001 |
+| code_station | Code de la station | O200004001 |
 | hauteur | Hauteur d'eau en mm | 3450 |
-| date_heure | Date d’observation | 1952-01-15 05:00:00 |
+| date_heure | Horodatage de l’observation | 1952-01-15 05:00:00 |
 | code_crue | Le label de la crue   | 1905 |
 
 
@@ -110,31 +110,32 @@ Toutes les heures, 30 minutes, 15 minutes et 5 minutes au fur et à mesure de l�
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| station | Code de la station | O125251001 |
+| code_station | Code de la station | O125251001 |
 | hauteur | Hauteur d'eau en cm | 284 |
-| horodate | Date d’observation | 2022-11-14T10:15:00.000Z |
+| date_heure |  Horodatage de l’observation | 2022-11-14T10:15:00.000Z |
+| code_crue | Le label de la crue | 1952 |
 
 Ce fichier assez volumineux n'est disponible qu'au format parquet. Un résumé quotidien plus léger est disponible :
 
-**hauteur_eau_quotidienne_toulouse** la hauteur maximale de la journée
+**hauteur_eau_quotidienne_toulouse** la hauteur maximale de chacune des journées de la série longue.
 
  
 ## 3- Pluviométrie
 
-Il existe des postes météo qui renseignent depuis 1809 notamment la pluviométrie. Voici un fichier qui regroupe un historique centré autour de chacune des 7 crues. 
+Il existe des postes météo qui renseignent depuis 1809 notamment la pluviométrie. Voici un fichier qui regroupe un historique centré autour de chacune des crues. 
 
-**pluviometrie_7_crues**
-1857, 1875, 1905, 1952, 1977, 2000, 2022 
+**pluviometrie**
+1857, 1875, 1879, 1900, 1905, 1952, 1977, 2000, 2022 
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| code_pluviometre | Code du pluviometre | 31404002 |
-| nom_usuel | Nom du pluviometre | SAURAT PRAT COMMUNAL |
+| code_pluviometre | Code du de la station météorologique | 31404002 |
+| nom_usuel | Nom de la station du pluviometre | SAURAT PRAT COMMUNAL |
 | latitude | Latitude | 42,91562157 | 
 | longitude | Longitude | 0,691927455 |
 | altitude | Altitude du pluviomètre en m | 711 | 
 | date_observation| Date d’observation  | 1952-01-15T00:00:00.000Z |
-| precipitation | Hauteur de pluie en cm | 2,20 |
+| precipitation | Hauteur de pluie en mm | 20,2 |
 | code_crue | Le label de la crue | 1952 |
 
 
