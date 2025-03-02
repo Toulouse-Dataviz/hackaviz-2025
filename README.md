@@ -59,7 +59,7 @@ On dispose de l’historique de 132 stations, leurs attributs sont :
 | date_ouverture_station | Date d’ouverture de la station | 1992-01-24 |
 | date_fermeture_station | Date de fermeture de la station (si existante) | année-mois-jour |
 | en_service | En service à ce jour | VRAI |
-| cote_zero_échelle | L'altitude du point de référence des mesures de hauteur en cm | 496,23 |
+| cote_zero_echelle | L'altitude du point de référence des mesures de hauteur en cm | 496,23 |
 | altitude_site | L'altitude du site en m | 711 | 
 | surface_bv | | 461 |
 | statut_site |  | 2 |
@@ -126,16 +126,20 @@ Ce fichier assez volumineux n'est disponible qu'au format parquet. Un résumé q
  
 ## 3- Pluviométrie
 
-Sur certaines stations se trouve un poste météo qui renseigne depuis 1809 notamment la pluviométrie. à ce point uniquement en Haute Garonne et Ariège. Idéalement un seul fichier qui reprend les plage de temps des 7 crues. 
+Il existe des postes météo qui renseignent depuis 1809 notamment la pluviométrie. Voici un fichier qui regroupe un historique centré autour de chacune des 7 crues. 
 
 **pluviometrie_7_crues**
 1857, 1875, 1905, 1952, 1977, 2000, 2022 
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| code_station | Code de la station | 31404002 |
-| date| Date d’observation  | 1952-01-15T00:00:00.000Z |
-| pluvio | Hauteur de pluie en cm | 2,20 |
+| code_pluviometre | Code du pluviometre | 31404002 |
+| nom_usuel | Nom du pluviometre | SAURAT PRAT COMMUNAL |
+| latitude | Latitude | 42,91562157 | 
+| longitude | Longitude | 0,691927455 |
+| altitude | Altitude du pluviomètre en m | 711 | 
+| date_observation| Date d’observation  | 1952-01-15T00:00:00.000Z |
+| precipitation | Hauteur de pluie en cm | 2,20 |
 | code_crue | Code de la crue | 1952 |
 
 
@@ -143,7 +147,7 @@ Sur certaines stations se trouve un poste météo qui renseigne depuis 1809 nota
 
 ## 4- Elévations - Modèle du terrain
 
-Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude sur 36 000?? points correspondant à une grille partielle de points espacés de 20m.
+Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude sur XXXXX?? points correspondant à une grille partielle de points espacés de 20m.
 
 En 2 formats seulement : geoparquet et tif (raster)
 
