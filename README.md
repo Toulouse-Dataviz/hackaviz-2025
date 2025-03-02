@@ -158,10 +158,10 @@ Ce qu'il faut retenir c'est que l'addition de la hauteur d’eau et de l'altitud
 
 Liste de principales références ayant permis de constituer les jeux de données mis à disposition
 
-| [https://hydro.eaufrance.fr](https://hydro.eaufrance.fr/) |  |
+| Référence | Source  |
 | --- | --- |
-| [https://hubeau.eaufrance.fr/](https://hubeau.eaufrance.fr/) |  |
-| ign |  |
-| data gouv  |  |
+| [https://hubeau.eaufrance.fr/](hubeau.eaufrance.fr/) | Diffusion des données sur l'eau |
+| [https://ign.fr](ign.fr) | L'institut Géographique National |
+| [https://data.gouv.fr](data.gouv.fr)  | La plateforme des données publiques françaises |
 
 
