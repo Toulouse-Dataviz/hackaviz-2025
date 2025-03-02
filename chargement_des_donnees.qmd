@@ -5,7 +5,7 @@ format: html
 lang: fr
 ---
 
-Pour vous aider à la lecture des fichiers de donnée dans le format parquet, voici les quelques lignes à recopier pour les charger avec quelques languages ou outils de traitement de données choisis:
+Pour vous aider à la lecture des fichiers de données dans le format parquet, voici les lignes à recopier pour les charger avec quelques langages ou outils de traitement de données choisis:
 
 ### Les crues et leur pluviométrie
 
@@ -48,7 +48,7 @@ les fichiers\
 - `debit_5_crues.xlsx`\
 - `hauteur_eau_9_crues.xlsx`\
 - `hauteur_eau_quotidienne_toulouse.xlsx`\
-sont prêts à étre ouverts dans LibreOffice, OpenOffice, MicrosoftOffice ou tout autre tableur.
+sont prêts à être ouverts dans Libre Office, OpenOffice, Microsoft Office ou tout autre tableur.
 
 #### Autre
 
@@ -64,7 +64,7 @@ sont disponibles pour tous les autres outils.
 ::: {.panel-tabset group="language"}
 #### R
 
-Les fichiers sont au format [GeoParquet](https://github.com/opengeospatial/geoparquet) qui peut nécéssiter l'installation d'une librairie spécifique.\
+Les fichiers sont au format [GeoParquet](https://github.com/opengeospatial/geoparquet) qui peut nécessiter l'installation d'une librairie spécifique.\
 Aussi la première ligne de commande est optionnelle et vous indique une solution pour son installation.
 
 ```{{r}}
@@ -79,7 +79,7 @@ altitude_bassin <- st_read_parquet(here("data/altitude_bassin_garonne.geoparquet
 
 #### Python
 
-Les fichiers sont au format [GeoParquet](https://github.com/opengeospatial/geoparquet) qui peut nécéssiter l'installation d'une librairie spécifique.\
+Les fichiers sont au format [GeoParquet](https://github.com/opengeospatial/geoparquet) qui peut nécessiter l'installation d'une librairie spécifique.\
 Aussi les deux premières ligne de commande sont optionnelle et vous indiquent une solution pour son installation.
 
 ```{{shell}}
@@ -111,7 +111,7 @@ db = DuckDBClient.of({
 les fichiers\
 - `station.xlsx`\
 - `pluviometrie.xlsx`\
-sont prêts à étre ouverts dans LibreOffice, OpenOffice, MicrosoftOffice ou tout autre tableur. Vous y trouverez les colonnes `latitude` `longitude` et `altitude` pour les utiliser en cartographie.
+sont prêts à être ouverts dans Libre Office, OpenOffice, Microsoft Office ou tout autre tableur. Vous y trouverez les colonnes `latitude` `longitude` et `altitude` pour les utiliser en cartographie.
 
 #### Autre
 
