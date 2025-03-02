@@ -2,7 +2,7 @@
 
 <aside>
 
-💡 AVERTISSEMENT : il y a beaucoup de jeux de données cette fois, mais rien n'oblige à tout utiliser. Vous pouvez en choisir un seul ou même un sous-ensemble des données qu'il contient pour raconter une belle histoire.
+💡 AVERTISSEMENT : il y a beaucoup de jeux de données cette année, mais rien n'oblige à tout utiliser. Vous pouvez en choisir un seul jeu ou un sous-ensemble pour raconter une belle histoire.
 
 Durant la durée de l'épreuve, un salon Discord est ouvert pour poser des questions et échanger: <https://discord.gg/wd4SKKDARC>
 
