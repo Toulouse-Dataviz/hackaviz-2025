@@ -61,13 +61,8 @@ On dispose de l’historique de 132 stations, leurs attributs sont :
 | en_service | En service à ce jour | VRAI |
 | cote_zero_echelle | L'altitude du point de référence des mesures de hauteur en cm | 496,23 |
 | altitude_site | L'altitude du site en m | 711 | 
-| surface_bv | | 461 |
-| statut_site |  | 2 |
-| premier_mois_etiage_site | | 9 |
-| influence_generale_site |  | 2 | 
 | libelle_commune | Libellé de la commune | BAGNERES-DE-LUCHON |
-| commentaire_influence_generale_site |  |  |
-| commentaire_site |  |  |
+| commentaire_site | Texte libre |  |
 | libelle_departement | Le nom du département | HAUTE-GARONNE |
 | longitude | Longitude | 0,691927455 |
 | latitude | Latitude | 42,91562157 | 
@@ -147,7 +142,7 @@ Il existe des postes météo qui renseignent depuis 1809 notamment la pluviomét
 
 ## 4- Elévations - Modèle du terrain
 
-Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude sur XXXXX?? points correspondant à une grille partielle de points espacés de 20m.
+Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude d'une grille de points au voisinage du cours d'eau.
 
 **altitude_bassin_garonne**
 En 2 formats seulement : geoparquet et csv
