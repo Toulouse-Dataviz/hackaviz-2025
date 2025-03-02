@@ -40,9 +40,9 @@ Elles peuvent être directement lues sur le repository github en préfixant le n
 https://raw.githubusercontent.com/Toulouse-Dataviz/hackaviz2025/refs/heads/main/data/<nom de fichier.suffixe>
 ```
 
-## 1- Les stations et sites
+## 1- Les stations
 
-C’est sur ces points géographiques que sont mesurées l’hydrométrie et la pluviométrie. Elles couvrent ce que l’on appelle le **bassin versant**  de la Garonne : les principaux cours d’eau qui contribuent au débit de la Garonne (Ariège, Tarn, Lot, …). 
+C’est sur ces points géographiques que sont mesurées l’hydrométrie. Elles couvrent ce que l’on appelle le **bassin versant**  de la Garonne : les principaux cours d’eau qui contribuent au débit de la Garonne (Ariège, Tarn, Lot, …). La pluviométrie est mesurée sur des postes météo qui peuvent coïncider ou pas avec les stations.
 
 ![carte bassin.jpg](carte_bassin.jpg)
 
