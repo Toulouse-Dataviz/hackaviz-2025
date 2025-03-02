@@ -2,19 +2,19 @@
 
 <aside>
 
-💡 AVERTISSEMENT : il y a beaucoup de jeux de données cette fois, mais rien n'oblige à tout utiliser. Vous pouvez en choisir un seul ou même un sous-ensemble des données qu'il contient pour raconter une belle histoire.
+💡 AVERTISSEMENT : il y a beaucoup de jeux de données cette année, mais rien n'oblige à tout utiliser. Vous pouvez en choisir un seul jeu ou un sous-ensemble pour raconter une belle histoire.
 
 Durant la durée de l'épreuve, un salon Discord est ouvert pour poser des questions et échanger: <https://discord.gg/wd4SKKDARC>
 
 Pour télécharger les données vous pouvez
 
--   selectionner un fichier dans le dossier `/data/` et le télécharger avec le bouton Download raw file :
+-   selectionner un fichier dans le dossier [`/data/`](https://github.com/Toulouse-Dataviz/hackaviz-2025/tree/main/data) et le télécharger avec le bouton Download raw file :
 
-    ![](docs/download_file.jpg){width="554"}
+    <img src="docs/download_file.jpg" width="554px">
 
 -   ou sélectionner une [release](https://github.com/Toulouse-Dataviz/hackaviz-2025/releases) sur le panneau de droite pour télécharger l'ensemble dans un `.zip`.
 
-Pour lire les données avec les principaux logiciels, consultez la page d'[aide au chargement](https://toulouse-dataviz.github.io/hackaviz-2025/chargement_des_donnees.html)
+Pour lire les données avec les principaux logiciels, consultez la page d'[aide au chargement](https://toulouse-dataviz.github.io/hackaviz-2025/chargement_des_donnees.html).
 
 </aside>
 
@@ -22,15 +22,15 @@ Pour lire les données avec les principaux logiciels, consultez la page d'[aide 
 
 # Que d’eau, que d’eau !
 
-Toulouse Dataviz a rassemblé cette année un ensemble de jeux de données qui rend hommage aux 150 ans de la crue du 23 juin 1875 qui a dévasté de nombreuses communes dans les trois départements : Haute-Garonne, Tarn-et-Garonne et Lot-et-Garonne. 200 morts et 25 000 sans logement.
+Toulouse Dataviz a rassemblé cette année un ensemble de jeux de données qui rend hommage aux 150 ans de la crue du 23 juin 1875 qui a dévasté de nombreuses communes dans les trois départements : Haute-Garonne, Tarn-et-Garonne et Lot-et-Garonne. 200 morts et 25 000 personnes sans logement.
 
-A Toulouse, ont été lourdement affectés, surtout la rive gauche de la Garonne (Saint-Cyprien et Croix de Pierre) mais aussi la rive droite (Saint-Michel et Amidonniers). Cet événement est à l’origine des constructions de prévention déployés depuis : digues, portes sur les berges, nouvelles règles de construction, … Et bien sûr, la mise en place de politiques publiques de surveillance, d’alerte et de mise en sécurité si nécessaire.
+A Toulouse, ont été lourdement affectés, surtout la rive gauche de la Garonne (Saint-Cyprien et Croix de Pierre) mais aussi la rive droite (Saint-Michel et les Amidonniers). Cet événement est à l’origine des constructions de prévention déployés depuis : digues, portes sur les berges, nouvelles règles de construction … Et bien sûr, la mise en place de politiques publiques de surveillance, d’alerte et de mise en sécurité si nécessaire.
 
 [La crue de 1875 de la Garonne sur Wikipedia](https://fr.wikipedia.org/wiki/Crue_de_la_Garonne_en_1875)
 
 [Le site de Toulouse Metropole sur les 150 ans de la crue de 1875](https://jeparticipe.metropole.toulouse.fr/processes/les150ans-crues-garonne)
 
-Le sujet est complexe et l’événement est ancien, mais heureusement les générations précédentes ont eu la sagesse de mettre en place une organisation humaine permettant le relevé systématique des niveaux des cours d’eau et de la pluviométrie.
+Le sujet est complexe et l'événement remonte à loin, mais heureusement, les générations précédentes ont eu la sagesse de mettre en place une organisation permettant de relever systématiquement les niveaux des cours d'eau et la pluviométrie. Pendant plus d'un siècle, ce sont des milliers de petites mains qui ont, tous les jours, consigné ces données dans des cahiers qu'il pleuve, qu'il vente ou qu'il neige.
 
 ![](ToulousePN_1857_10.jpg)
 
@@ -42,19 +42,18 @@ Les données sont disponibles sous différents formats :
 -   json ou geojson
 -   parquet ou geoparquet
 
-Elles peuvent être directement lues sur le repository github en préfixant le nom du fichier par :
+Elles peuvent être directement lues sur le repository GitHub en préfixant le nom du fichier par :
 
 ```         
-https://raw.githubusercontent.com/Toulouse-Dataviz/hackaviz2025/refs/heads/main/data/<nom de fichier.suffixe>
+https://raw.githubusercontent.com/Toulouse-Dataviz/hackaviz2025/refs/heads/main/data/<nom_de_fichier.extension>
 ```
 
 ## 1- Les stations
 
-C’est sur ces points géographiques que sont mesurées l’hydrométrie. Elles couvrent ce que l’on appelle le **bassin versant** de la Garonne : les principaux cours d’eau qui contribuent au débit de la Garonne (Ariège, Tarn, Lot, …). La pluviométrie est mesurée sur des postes météo qui peuvent coïncider ou pas avec les stations.
-
+Les mesures hydrométriques sont effectuées sur ces points géographiques, couvrant ce que l'on appelle le bassin versant de la Garonne : les principaux cours d'eau qui alimentent le débit de la Garonne (Ariège, Tarn, Lot, etc.). La pluviométrie est quant à elle quantifiée par des stations météorologiques qui peuvent ou non coïncider avec les stations hydrométriques.
 ![carte bassin.jpg](carte_bassin.jpg)
 
-On dispose de l’historique de 132 stations, leurs attributs sont :
+Voici l’historique de 132 stations, leurs attributs sont :
 
 **station**
 
@@ -83,7 +82,7 @@ On dispose de l’historique de 132 stations, leurs attributs sont :
 
 **hauteur_eau_9_crues**
 
-Le fichier contient un historique temporel autour des crues historiques depuis 1857. (Attention le nombre de stations actives varie d’une crue à l’autre)
+Le fichier contient un historique temporel autour des neuf crues historiques depuis 1857. Le nombre de stations actives varie d’une crue à l’autre.
 
 | Attribut     | Description                 | Exemple             |
 |--------------|-----------------------------|---------------------|
@@ -98,7 +97,7 @@ Le fichier contient un historique temporel autour des crues historiques depuis 1
 
 **debit_5_crues**
 
-Le fichier contient un historique autour des 5 crues historiques depuis 1905. (Attention le nombre de stations actives varie d’une crue à l’autre)
+Le fichier contient un historique autour des cinq crues historiques depuis 1905. Attention le nombre de stations actives varie d’une crue à l’autre.
 
 | Attribut | Description | Exemple |
 |----|----|----|
@@ -107,7 +106,7 @@ Le fichier contient un historique autour des 5 crues historiques depuis 1905. (A
 | debit_moyen_journalier | Débit moyen journalier en m3/s | 22323 |
 | code_crue | Le label de la crue | 1905 |
 
-### Une série longue de 160 ans pour Toulouse (mesuré au pont Neuf)
+### Une série longue de 160 ans pour Toulouse (mesurée au Pont-Neuf)
 
 Toutes les heures, 30 minutes, 15 minutes et 5 minutes au fur et à mesure de l’avancée technologique des moyens de mesure.
 
@@ -119,8 +118,9 @@ Toutes les heures, 30 minutes, 15 minutes et 5 minutes au fur et à mesure de l�
 | hauteur      | Hauteur d'eau en cm         | 284                      |
 | date_heure   | Horodatage de l’observation | 2022-11-14T10:15:00.000Z |
 
-Ce fichier assez volumineux n'est disponible qu'au format parquet. Un résumé quotidien plus léger est disponible :
+Ce fichier assez volumineux n'est disponible qu'au format parquet. 
 
+Toutefois, un résumé quotidien plus léger est disponible :
 **hauteur_eau_quotidienne_toulouse** la hauteur maximale de chacune des journées de la série longue.
 
 ## 3- Pluviométrie
@@ -142,7 +142,7 @@ Il existe des postes météo qui renseignent depuis 1809 notamment la pluviomét
 
 ## 4- Elévations - Modèle du terrain
 
-Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin. Autrement dit l’altitude d'une grille de points au voisinage du cours d'eau.
+Pour les plus audacieux, nous avons rassemblé l’élévation d’une bande de 100m entourant le cours de chacun des cours d’eau du bassin, autrement dit l’altitude d'une grille de points au voisinage du cours d'eau.
 
 **altitude_bassin_garonne** En 2 formats seulement : geoparquet et csv
 
@@ -152,17 +152,17 @@ Pour les plus audacieux nous avons rassemblé l’élévation d’une bande de 1
 | longitude | Longitude     | 0,691927455 |
 | latitude  | Latitude      | 42,91562157 |
 
-Et une version réduite à Toulouse St Cyprien **altitude_toulouse_st_cyprien** En 3 formats : geojson, geoparquet et csv
+Et une version réduite à Toulouse St Cyprien **altitude_toulouse_st_cyprien** en 3 formats : geojson, geoparquet et csv.
 
-Ce qu'il faut retenir c'est que l'addition de la hauteur d’eau et de l'altitude du point de référence de la station fournit une grandeur **comparable** aux élévations de terrain.
+Ce qu'il faut retenir, c'est que l'addition de la hauteur d’eau et de l'altitude du point de référence de la station fournit une grandeur **comparable** aux élévations de terrain.
 
 # Références
 
-Liste de principales références ayant permis de constituer les jeux de données mis à disposition
+Liste de principales références ayant permis de constituer les jeux de données mis à disposition.
 
 | Référence | Source |
 |------------------------------------|------------------------------------|
 | [hubeau.eaufrance.fr/](https://hubeau.eaufrance.fr/) | Diffusion des données sur l'eau |
-| [ign.fr](https://ign.fr) | L'institut Géographique National |
-| [data.gouv.fr](https://data.gouv.fr) | La plateforme des données publiques françaises |
-| [vigicrues.gouv.fr](https://vigicrues.gouv.fr) | Le service d'information sur le risque de crues |
+| [ign.fr](https://ign.fr) | Institut Géographique National |
+| [data.gouv.fr](https://data.gouv.fr) | Plateforme des données publiques françaises |
+| [vigicrues.gouv.fr](https://vigicrues.gouv.fr) | Service d'information sur le risque de crues |
