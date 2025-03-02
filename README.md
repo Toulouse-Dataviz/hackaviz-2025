@@ -49,23 +49,30 @@ On dispose de l’historique de 132 stations, leurs attributs sont :
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| code_site | Le code du site de la station | chaîne |
 | libelle_site | Le libellé du site de la station | Le Maudan à Fos et à Melles |
-| altitude | L'altitude du site en m | 711 | 
+| code_station | Le code de la station | O004402001 |
+| libelle_station | Le libellé de la station | La Garonne à Fos |
+| libelle_cours_eau | Libellé du cours d’eau (si existant) | La Garonne |
+| date_ouverture_station | Date d’ouverture de la station | 1992-01-24 |
+| date_fermeture_station | Date de fermeture de la station (si existante) | année-mois-jour |
+| en_service | En service à ce jour | VRAI |
+| cote_zero_échelle | L'altitude du point de référence des mesures de hauteur en cm | 496,23 |
+| altitude_site | L'altitude du site en m | 711 | 
+| surface_bv | | 461 |
+| statut_site |  | 2 |
+| premier_mois_etiage_site | | 9 |
+| influence_generale_site |  | 2 | 
+| libelle_commune | Libellé de la commune | BAGNERES-DE-LUCHON |
+| commentaire_influence_generale_site |  |  |
+| commentaire_site |  |  |
 | libelle_departement | Le nom du département | HAUTE-GARONNE |
 | longitude | Longitude | 0,691927455 |
 | latitude | Latitude | 42,91562157 | 
-| code_station | Le code de la station | O004402001 |
-| libelle_station | Le libellé de la station | La Garonne à Fos|
-| libelle_commune | Libellé de la commune | BAGNERES-DE-LUCHON |
-| libelle_cours_eau | Libellé du cours d’eau (si existant) | La Garonne |
-| date_ouverture_station | Date d’ouverture de la station | année-mois-jour |
-| date_fermeture_station | Date de fermeture de la station (si existante) | année-mois-jour |
-| en_service | En service à ce jour | Booléen |
-| cote_zero_echelle | L'altitude du point de référence des mesures de hauteur | réel |
+
 
 ## 2- Hydrométrie
 ### Les 7 crues de 1857 à 2022 en terme de hauteur d’eau
+1857, 1875, 1905, 1952, 1977, 2000, 2022 
 
 **hauteur_eau_7_crues**
 
@@ -75,12 +82,9 @@ Le fichier contient un historique temporel autour des 7 crues historiques depuis
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| code_site | Code site | chaîne |
-| code_station | Code de la station | chaîne |
-| date | Date d’observation | année-mois-jour |
-| longitude | Longitude | réel |
-| latitude | Latitude | réel |
+| station | Code de la station | O200004001 |
 | hauteur | Hauteur d'eau en mm | 3450 |
+| date_heure | Date d’observation | 1952-01-15 05:00:00 |
 | code_crue | Le label de la crue   | 1905 |
 
 
@@ -94,11 +98,8 @@ Le fichier contient un historique autour des 5 crues historiques depuis 1905.
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| code_site | Code site | chaîne |
 | code_station | Code de la station | O125251001 |
-| date_observation | Jour de la mesure | 17/01/1905 |
-| longitude | Longitude | 1,60885338 |
-| latitude | Latitude | 42,96626251 |
+| date_observation | Jour de la mesure | 1905-01-02T00:00:00.000Z |
 | debit_moyen_journalier | Débit moyen journalier en m3/s | 22323 |
 | code_crue | Le label de la crue   | 1905 |
 
@@ -108,32 +109,32 @@ Le fichier contient un historique autour des 5 crues historiques depuis 1905.
 Toutes les heures, 30 minutes, 15 minutes et 5 minutes au fur et à mesure de l’avancée technologique des moyens de mesure.
 
 **hauteur_eau_serie_longue_toulouse** uniquement au format parquet
-**hauteur_eau_synthese_toulouse** la hauteur maximale de la journée en xlsx
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| date | Date d’observation | année-mois-jour-heure-minutes |
-| hauteur | Hauteur d'eau en m | réel |
+| station | Code de la station | O125251001 |
+| hauteur | Hauteur d'eau en cm | 284 |
+| horodate | Date d’observation | 2022-11-14T10:15:00.000Z |
 
-Ce fichier assez volumineux n'est disponible qu'au format parquet.
+Ce fichier assez volumineux n'est disponible qu'au format parquet. Un résumé quotidien plus léger est disponible :
+
+**hauteur_eau_quotidienne_toulouse** la hauteur maximale de la journée
 
  
 ## 3- Pluviométrie
 
-Sur certaines stations se trouve un poste météo qui renseigne depuis 1809 notamment la pluviométrie. à ce point uniquement en Haute Garonne et Ariège. Idéalement un seul fichier qui reprend les plage de temps des 6 crues. 
+Sur certaines stations se trouve un poste météo qui renseigne depuis 1809 notamment la pluviométrie. à ce point uniquement en Haute Garonne et Ariège. Idéalement un seul fichier qui reprend les plage de temps des 7 crues. 
 
 **pluviometrie_7_crues**
-
+1857, 1875, 1905, 1952, 1977, 2000, 2022 
 
 | Attribut | Description | Exemple |
 | --- | --- | --- |
-| code_site | Code site | chaîne |
-| code_station | Code de la station | chaîne |
-| date| Date d’observation  | année-mois-jour |
-| longitude | Longitude | réel |
-| latitude | Latitude | réel |
-| pluvio | Hauteur de pluie en mm | réel |
-|  |  |  |
+| code_station | Code de la station | 31404002 |
+| date| Date d’observation  | 1952-01-15T00:00:00.000Z |
+| pluvio | Hauteur de pluie en cm | 2,20 |
+| code_crue | Code de la crue | 1952 |
+
 
 
 
@@ -160,4 +161,4 @@ Liste de principales références ayant permis de constituer les jeux de donnée
 | ign |  |
 | data gouv  |  |
 
-*Depuis le 24 novembre 2021, deux types d'observations "élaborées" (débits moyens journaliers et débits moyens mensuels) sont dorénavant disponibles sur tout l'historique (depuis 1900 pour certaines stations) pour plus de 4200 stations. Les données sont mises à jour quotidiennement.*
+
