@@ -1,0 +1,124 @@
+---
+title: "Lecture des fichiers de données"
+author: "Toulouse Dataviz"
+format: html
+lang: fr
+---
+
+Pour vous aider à la lecture des fichiers de donnée dans le format parquet, voici les quelques lignes à recopier pour les charger avec quelques languages ou outils de traitement de données choisis:
+
+### Les crues et leur pluviométrie
+
+::: {.panel-tabset group="language"}
+#### R
+
+```{{r}}
+library(arrow, quietly = TRUE)
+library(here, quietly = TRUE)
+hauteur_eau_crues <- read_parquet(here("data/hauteur_eau_9_crues.parquet"))
+hauteur_eau_toulouse <- read_parquet(here("data/hauteur_eau_serie_longue_toulouse.parquet"))
+debit_crues <- read_parquet(here("data/debit_5_crues.parquet"))
+pluviometrie <- read_parquet(here("data/pluviometrie.parquet"))
+```
+
+#### Python
+
+```{{python}}
+import pandas as pd
+hauteur_eau_crues = pd.read_parquet("data/hauteur_eau_9_crues.parquet")
+hauteur_eau_toulouse = pd.read_parquet("data/hauteur_eau_serie_longue_toulouse.parquet")
+debit_crues = pd.read_parquet("data/debit_5_crues.parquet")
+pluviometrie = pd.read_parquet("data/pluviometrie.parquet")
+```
+
+#### Observable
+
+```{{ojs}}
+db = DuckDBClient.of({
+  hauteur_eau_crues: FileAttachment("data/hauteur_eau_9_crues.parquet"),
+  hauteur_eau_toulouse: FileAttachment("data/hauteur_eau_serie_longue_toulouse.parquet"),
+  debit_crues: FileAttachment("data/debit_5_crues.parquet"),
+  pluviometrie: FileAttachment("data/pluviometrie.parquet")
+})
+```
+
+#### Office
+
+les fichiers\
+- `debit_5_crues.xlsx`\
+- `hauteur_eau_9_crues.xlsx`\
+- `hauteur_eau_quotidienne_toulouse.xlsx`\
+sont prêts à étre ouverts dans LibreOffice, OpenOffice, MicrosoftOffice ou tout autre tableur.
+
+#### Autre
+
+les fichiers\
+- `debit_5_crues.csv`\
+- `hauteur_eau_9_crues.csv`\
+- `hauteur_eau_quotidienne_toulouse.csv`\
+sont disponibles pour tous les autres outils.
+:::
+
+### Les fichiers de contexte géographique
+
+::: {.panel-tabset group="language"}
+#### R
+
+Les fichiers sont au format [GeoParquet](https://github.com/opengeospatial/geoparquet) qui peut nécéssiter l'installation d'une librairie spécifique.\
+Aussi la première ligne de commande est optionnelle et vous indique une solution pour son installation.
+
+```{{r}}
+install.packages("sfarrow")
+
+library(sfarrow, quietly = TRUE)
+library(here, quietly = TRUE)
+station <- st_read_parquet(here("data/station.geoparquet"))
+altitude_st_cyprien <- st_read_parquet(here("data/altitude_toulouse_st_cyprien.geoparquet"))
+altitude_bassin <- st_read_parquet(here("data/altitude_bassin_garonne.geoparquet"))
+```
+
+#### Python
+
+Les fichiers sont au format [GeoParquet](https://github.com/opengeospatial/geoparquet) qui peut nécéssiter l'installation d'une librairie spécifique.\
+Aussi les deux premières ligne de commande sont optionnelle et vous indiquent une solution pour son installation.
+
+```{{shell}}
+pip install pyarrow
+pip install geopandas
+```
+
+```{{python}}
+import geopandas as gpd
+station = gpd.read_parquet("data/station.geoparquet")
+altitude_st_cyprien = gpd.read_parquet("data/altitude_toulouse_st_cyprien.geoparquet")
+altitude_bassin = gpd.read_parquet("data/altitude_bassin_garonne.geoparquet")
+```
+
+#### Observable
+
+```{{ojs}}
+import {DuckDBClient} from '@cmudig/duckdb'
+
+db = DuckDBClient.of({
+  station: FileAttachment("data/station.geoparquet"),
+  altitude_st_cyprien: FileAttachment("data/altitude_toulouse_st_cyprien.geoparquet"),
+  altitude_bassin: FileAttachment("data/altitude_bassin_garonne.geoparquet")
+})
+```
+
+#### Office
+
+les fichiers\
+- `station.xlsx`\
+- `pluviometrie.xlsx`\
+sont prêts à étre ouverts dans LibreOffice, OpenOffice, MicrosoftOffice ou tout autre tableur. Vous y trouverez les colonnes `latitude` `longitude` et `altitude` pour les utiliser en cartographie.
+
+#### Autre
+
+les fichiers\
+- `station.csv`\
+- `pluviometrie.csv`\
+- `altitude_toulouse_st_cyprien.csv`\
+- `altitude_bassin_garonne.csv`\
+sont disponibles pour tous les autres outils. Vous y trouverez les colonnes `latitude` `longitude` et `altitude` pour les utiliser en cartographie.
+:::
