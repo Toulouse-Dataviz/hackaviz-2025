@@ -1,4 +1,4 @@
-date_observation;code_station;max(hauteur, na.rm = TRUE)
+date_observation;code_station;hauteur
 1946-01-04;O200004001;500 [mm]
 1946-01-05;O200004001;550 [mm]
 1946-01-06;O200004001;450 [mm]
